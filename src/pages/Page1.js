@@ -7,18 +7,18 @@ function Page1() {
 
             {/* <!-- leftContainer --> */}
             <div>
-                <img src={Chanelimage} alt="Chanelimage" />
+                <img src={Chanelimage} alt="Chanelimage" className="object-cover w-full h-full" />
             </div>
 
             {/* <!-- rightContainer --> */}
             <div className="p-5 bg-white rounded-md">
                 {/* <h6 style="letter-spacing: 7px;">PERFUME</h6> */}
 
-                <h6 className="tracking-widest">PERFUME</h6>
-                <h2 className="font-extrabold text-3xl">Gabrielle Essence Eau De Parfum</h2>
+                <h6 className="tracking-widest">PERFUME</h6><br />
+                <h2 className="font-extrabold text-3xl">Gabrielle Essence Eau De Parfum</h2><br />
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Corrupti, perspiciatis. Cumque temporibus fuga incidunt
-                    impedit voluptate reprehenderit dolorum</p>
+                    impedit voluptate reprehenderit dolorum</p><br />
 
                 {/* <!-- pricingContainer --> */}
 
