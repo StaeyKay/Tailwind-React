@@ -3,7 +3,7 @@ import Chanelimage from "../assets/images/Chanelimage.jpg";
 function Page1() {
     return (
 
-        <div class="mainContainer">
+        <div className="grid grid-cols-2">
 
             {/* <!-- leftContainer --> */}
             <div>
@@ -11,27 +11,27 @@ function Page1() {
             </div>
 
             {/* <!-- rightContainer --> */}
-            <div class="rightContainer">
+            <div className="p-5 bg-white rounded-md">
                 {/* <h6 style="letter-spacing: 7px;">PERFUME</h6> */}
 
-                <h6>PERFUME</h6>
-                <h2>Gabrielle Essence Eau De Parfum</h2>
+                <h6 className="tracking-widest">PERFUME</h6>
+                <h2 className="font-extrabold text-3xl">Gabrielle Essence Eau De Parfum</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Corrupti, perspiciatis. Cumque temporibus fuga incidunt
                     impedit voluptate reprehenderit dolorum</p>
 
                 {/* <!-- pricingContainer --> */}
 
-                <div class="pricingContainer">
+                <div className="grid grid-cols-2 items-center">
                     {/* <p style="color: green; font-size: 30px;"><b>$149.99</b></p> */}
 
-                    <p><b>$149.99</b></p>
+                    <p className="text-green-600 text-3xl"><b>$149.99</b></p>
                     {/* <p style="text-decoration: line-through; margin-left: 25px;">$169.99</p> */}
 
                     <p>$169.99</p>
                 </div><br /><br /><br />
 
-                <button type="button" onclick="myFunction()">Add to Cart</button>
+                <button type="button" className="w-full p-4 text-base bg-green-600 text-white rounded-xl">Add to Cart</button>
             </div>
         </div>
     );
