@@ -10,7 +10,7 @@ function Page2() {
         // <!-- mainContainer styling -->
     <div>
         {/* <!-- topnav styling --> */}
-        <div className="grid grid-cols-3 text-center bg-blue-950">
+        <div className="grid grid-cols-3 text-center bg-blue-950 text-white p-3">
             {/* <a href="Link" style="text-align: right; padding-right: 20px;">Staff</a> */}
             <a href="Link">Staff</a>
             <a href="Link">Student</a>
