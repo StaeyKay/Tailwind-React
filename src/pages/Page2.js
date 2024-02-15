@@ -47,24 +47,24 @@ function Page2() {
         {/* <!-- newsRow styling --> */}
         {/* <div style="display: grid; grid-template-columns: 18.75% 18.75% 18.75% 18.75% 25%;"></div> */}
         <div className="grid grid-cols-5">
-            <figure>
+            <figure className="ms-1 me-2">
                 <img src= {img1} alt="Image1"/>
-                <figcaption>University of Ghana to host Turkish Cultural Institute</figcaption>
+                <figcaption className="text-blue-400">University of Ghana to host Turkish Cultural Institute</figcaption>
             </figure>
 
-            <figure>
+            <figure className="ms-1 me-2">
                 <img src= {img2} alt="Image2"/>
-                <figcaption>Outstanding Performance by UG Sportsmen and Women at...</figcaption>
+                <figcaption className="text-blue-400">Outstanding Performance by UG Sportsmen and Women at...</figcaption>
             </figure>
 
-            <figure>
+            <figure className="ms-1 me-2">
                 <img src= {img3} alt="Image3"/>
-                <figcaption>GAUA-UG Hosts Annual General Meeting and Retiree’s Party</figcaption>
+                <figcaption className="text-blue-400">GAUA-UG Hosts Annual General Meeting and Retiree’s Party</figcaption>
             </figure>
 
-            <figure>
+            <figure className="ms-1 me-2">
                 <img src= {img4} alt="Image4"/>
-                <figcaption>Installation of Electronic Access Control at Halls of...</figcaption>
+                <figcaption className="text-blue-400">Installation of Electronic Access Control at Halls of...</figcaption>
             </figure>
 
             <figure>
@@ -74,73 +74,73 @@ function Page2() {
         </div>
 
         {/* <!-- upcoming events, announcements and featured links row styling --> */}
-        <div class="row4">
+        <div className="grid grid-cols-3 m-2">
 
             {/* <!-- upcoming events section --> */}
             <div>
             {/* <h3 class="row4Headings" style="margin-left: 0px;">Upcoming Events</h3> */}
-                <h3 class="row4Headings">Upcoming Events</h3>
-                <p>Launch of the Internship Policy of the University of Ghana, Legon</p>
-                <p>Time: 10:00 am to 12:00 pm</p>
-                <p>Great Hall, University of Ghana</p>
-                <p>2023 Remembrance Day Christian Service and Muslim Prayers</p>
-                <p>Time: 3:00 pm to 2:00 pm</p>
-                <p>University of Ghana</p>
-                <p>2023 OPEN DAY</p>
-                <p>Time: 9:00 pm to 3:00 pm</p>
-                <p>UG Sports Complex / Korle-Bu</p>
+                <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0">Upcoming Events</h3>
+                <p className="text-blue-400 px-3">Launch of the Internship Policy of the University of Ghana, Legon</p>
+                <p className="text-blue-400 px-3">Time: 10:00 am to 12:00 pm</p>
+                <p className="text-blue-400 px-3">Great Hall, University of Ghana</p>
+                <p className="text-blue-400 px-3">2023 Remembrance Day Christian Service and Muslim Prayers</p>
+                <p className="text-blue-400 px-3">Time: 3:00 pm to 2:00 pm</p>
+                <p className="text-blue-400 px-3">University of Ghana</p>
+                <p className="text-blue-400 px-3">2023 OPEN DAY</p>
+                <p className="text-blue-400 px-3">Time: 9:00 pm to 3:00 pm</p>
+                <p className="text-blue-400 px-3">UG Sports Complex / Korle-Bu</p>
             </div>
 
             {/* <!-- announcements section --> */}
             <div>
-                <h3 class="row4Headings">Announcements</h3>
-                <p>Call for Abstracts - Research Week - University of Ghana Dental School</p>
+                <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0">Announcements</h3>
+                <p className="text-blue-400 px-3">Call for Abstracts - Research Week - University of Ghana Dental School</p>
                 <hr/>
-                <p>Akuafo Hall Agri-Fest 2023</p>
+                <p className="text-blue-400 px-3">Akuafo Hall Agri-Fest 2023</p>
                 <hr/>
-                <p>Call for Applications - Building Capacity for Early Career Humanities Scholars in Africa</p>
+                <p className="text-blue-400 px-3">Call for Applications - Building Capacity for Early Career Humanities Scholars in Africa</p>
                 <hr/>
-                <p>Admissions Into the Graduate Entry Medical Programme (GEMP) 2023/2024 Academic Year</p>
+                <p className="text-blue-400 px-3">Admissions Into the Graduate Entry Medical Programme (GEMP) 2023/2024 Academic Year</p>
                 <hr/>
-                <p>Admissions into the Practice Proficiency Medical Programme (PPMP) 2023 Academic Year</p>
+                <p className="text-blue-400 px-3">Admissions into the Practice Proficiency Medical Programme (PPMP) 2023 Academic Year</p>
                 <hr/>
-                <p>Arrangements for Students’ Accommodation for 2023/2024 Academic Year</p>
+                <p className="text-blue-400 px-3">Arrangements for Students’ Accommodation for 2023/2024 Academic Year</p>
                 <hr/>
-                <p>International Day for Older Persons</p>
+                <p className="text-blue-400 px-3">International Day for Older Persons</p>
                 <hr/>
-                <p>Logical Framework Approach and Result Framework Training</p>
+                <p className="text-blue-400 px-3">Logical Framework Approach and Result Framework Training</p>
                 <hr/>
-                <p>more announcements....</p>
+                <p className="text-blue-400 px-3">more announcements....</p>
             </div>
 
             {/* <!-- Featured links section --> */}
             <div>
             {/* <h3 class="row4Headings" style="width: 100%;">Featured Links</h3> */}
-                <h3>Featured Links</h3>
+                <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0">Featured Links</h3>
                 {/* <button style="background-color: #3d8b5f;"><b>August 2023 Congregation</b></button> */}
-                <button><b>August 2023 Congregation</b></button>
+                <p className="bg-teal-500 text-white"><b>August 2023 Congregation</b></p>
                 {/* <button style="background-color: #f76149;"><b>Course Lecturer Evaluation</b></button> */}
-                <button><b>Course Lecturer Evaluation</b></button>
+                <p className="bg-orange-400 text-white"><b>Course Lecturer Evaluation</b></p>
                 {/* <button style="background-color: #7D7B7B;"><b>Mature Student Admissions (Second Batch)</b></button> */}
-                <button><b>Mature Student Admissions (Second Batch)</b></button>
+                <button className="bg-gray-400 text-white"><b>Mature Student Admissions (Second Batch)</b></button>
                 {/* <button style="background-color: #00bdee;"><b>2ND Semester Examination Timetable</b></button> */}
-                <button><b>2ND Semester Examination Timetable</b></button>
+                <button className="bg-blue-400 text-white"><b>2ND Semester Examination Timetable</b></button>
                 {/* <button style="background-color: #DF8B0C;"><b>General Amnesty for Undergraduate Students yet to */}
                         {/* Graduate</b></button> */}
-                <button><b>General Amnesty for Undergraduate Students yet to
+                <button className="bg-yellow-500 text-white"><b>General Amnesty for Undergraduate Students yet to
                         Graduate</b></button>
                 {/* <button style="background-color: #3d8b5f;"><b>Admission Status Checker</b></button> */}
-                <button><b>Admission Status Checker</b></button>
+                <button className="bg-teal-500 text-white"><b>Admission Status Checker</b></button>
                 {/* <button style="background-color: #f76149;"><b>Join the UG Alumni Network</b></button> */}
-                <button><b>Join the UG Alumni Network</b></button>
+                <button className="bg-orange-400 text-white"><b>Join the UG Alumni Network</b></button>
                 {/* <button style="background-color: #7D7B7B;"><b>Donate to VC's Student Digitalisation */}
                         {/* Initiative</b></button> */}
-                <button><b>Donate to VC's Student Digitalisation
+                <button className="bg-gray-400 text-white"><b>Donate to VC's Student Digitalisation
                         Initiative</b></button>
                 {/* <button style="background-color: #00bdee;"><b>Coronavirus Risk Assessment Form</b></button> */}
-                <button><b>Coronavirus Risk Assessment Form</b></button>
+                <button className="bg-blue-400 text-white"><b>Coronavirus Risk Assessment Form</b></button>
                 {/* <button style="background-color: #DF8B0C;"><b>Sakai LMS Login</b></button> */}
-                <button><b>Sakai LMS Login</b></button>
+                <button className="bg-yellow-500 text-white"><b>Sakai LMS Login</b></button>
                 {/* <button style="background-color: #3d8b5f;"><b>Vacancy Announcements</b></button> */}
                 <button><b>Vacancy Announcements</b></button>
                 {/* <button style="background-color: #f76149;"><b>Steps for Online Registration</b></button> */}
