@@ -18,8 +18,7 @@ function Page2() {
         </div>
 
         {/* <!-- mainHeader styling --> */}
-        {/* <div style="padding: 10px;"></div> */}
-        <div>
+        <div className="text-blue-950 text-3xl p-3 font-bold">
             {/* <h2 style="color: #153d6f;">UNIVERSITY</h2> */}
             <h2>UNIVERSITY</h2>
             {/* <h2 style="color: #153d6f;">OF GHANA</h2> */}
@@ -27,27 +26,27 @@ function Page2() {
         </div>
 
         {/* <!-- navmenu styling --> */}
-        <div class="navmenu">
-            <a href="Link">ABOUT</a>
-            <a href="Link">ADMISSION</a>
-            <a href="Link">ACADEMICS</a>
-            <a href="Link">RESEARCH</a>
-            <a href="Link">LIBRARY</a>
-            <a href="Link">INTERNATIONAL PROGRAMMES</a>
-            <a href="Link">FRESHMEN INFO</a>
+        <div className="grid grid-cols-7 bg-blue-950 text-white">
+            <a href="Link" className="text-center p-2">ABOUT</a>
+            <a href="Link" className="text-center p-2">ADMISSION</a>
+            <a href="Link" className="text-center p-2">ACADEMICS</a>
+            <a href="Link" className="text-center p-2">RESEARCH</a>
+            <a href="Link" className="text-center p-2">LIBRARY</a>
+            <a href="Link" className="text-center p-2">INTERNATIONAL PROGRAMMES</a>
+            <a href="Link" className="text-center p-2">FRESHMEN INFO</a>
         </div>
 
         {/* <!-- topimage styling --> */}
-        <div class="topimage">
-            <img src= {undergrad} alt="undergraduate admissions image"/>
+        <div>
+            <img src= {undergrad} alt="undergraduate admissions image" className="object-cover w-full"/>
         </div>
 
-        {/* <h3 style="padding: 10px; color:#FFA500;">News</h3> */}
-        <h3>News</h3>
+        
+        <h3 className="text-yellow-500 font-bold text-lg p-5">News</h3>
 
         {/* <!-- newsRow styling --> */}
         {/* <div style="display: grid; grid-template-columns: 18.75% 18.75% 18.75% 18.75% 25%;"></div> */}
-        <div>
+        <div className="grid grid-cols-5">
             <figure>
                 <img src= {img1} alt="Image1"/>
                 <figcaption>University of Ghana to host Turkish Cultural Institute</figcaption>
