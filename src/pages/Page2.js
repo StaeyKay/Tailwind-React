@@ -28,7 +28,7 @@ function Page2() {
         {/* <!-- navmenu styling --> */}
         <div className="grid grid-cols-7 bg-blue-950 text-white">
             <a href="Link" className="text-center p-2">ABOUT</a>
-            <a href="Link" className="text-center p-2">ADMISSION</a>
+            <a href="Link" className="text-center p-2 sm:text-green-600">ADMISSION</a>
             <a href="Link" className="text-center p-2">ACADEMICS</a>
             <a href="Link" className="text-center p-2">RESEARCH</a>
             <a href="Link" className="text-center p-2">LIBRARY</a>
