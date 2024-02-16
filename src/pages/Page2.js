@@ -46,7 +46,7 @@ function Page2() {
 
         {/* <!-- newsRow styling --> */}
         {/* <div style="display: grid; grid-template-columns: 18.75% 18.75% 18.75% 18.75% 25%;"></div> */}
-        <div className="grid grid-cols-5 sm:grid-cols-1 md:grid-cols-3">
+        <div className="grid lg:grid-cols-5 sm:grid-cols-1 md:grid-cols-3">
             <figure className="ms-1 me-2">
                 <img src= {img1} alt="Image1"/>
                 <figcaption className="text-blue-400">University of Ghana to host Turkish Cultural Institute</figcaption>
