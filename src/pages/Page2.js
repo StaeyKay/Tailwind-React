@@ -216,7 +216,7 @@ function Page2() {
         </div>
 
         {/* <!-- final footer styling --> */}
-        <div class="finalFooter">
+        <div className="bg-gray-900 text-white text-center m-0 p-1">
             {/* <p style="padding: 5px; color: aliceblue; margin: 0px;">Copyright ©, 2023 University of Ghana</p> */}
             <p>Copyright ©, 2023 University of Ghana</p>
         </div>
