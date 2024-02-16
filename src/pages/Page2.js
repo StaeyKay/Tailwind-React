@@ -116,46 +116,46 @@ function Page2() {
             {/* <!-- Featured links section --> */}
             <div>
             {/* <h3 class="row4Headings" style="width: 100%;">Featured Links</h3> */}
-                <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0">Featured Links</h3>
+                <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0 mb-2">Featured Links</h3>
                 {/* <button style="background-color: #3d8b5f;"><b>August 2023 Congregation</b></button> */}
-                <p className="bg-teal-500 text-white"><b>August 2023 Congregation</b></p>
+                <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>August 2023 Congregation</b></p>
                 {/* <button style="background-color: #f76149;"><b>Course Lecturer Evaluation</b></button> */}
-                <p className="bg-orange-400 text-white"><b>Course Lecturer Evaluation</b></p>
+                <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Course Lecturer Evaluation</b></p>
                 {/* <button style="background-color: #7D7B7B;"><b>Mature Student Admissions (Second Batch)</b></button> */}
-                <button className="bg-gray-400 text-white"><b>Mature Student Admissions (Second Batch)</b></button>
+                <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>Mature Student Admissions (Second Batch)</b></p>
                 {/* <button style="background-color: #00bdee;"><b>2ND Semester Examination Timetable</b></button> */}
-                <button className="bg-blue-400 text-white"><b>2ND Semester Examination Timetable</b></button>
+                <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>2ND Semester Examination Timetable</b></p>
                 {/* <button style="background-color: #DF8B0C;"><b>General Amnesty for Undergraduate Students yet to */}
                         {/* Graduate</b></button> */}
-                <button className="bg-yellow-500 text-white"><b>General Amnesty for Undergraduate Students yet to
-                        Graduate</b></button>
+                <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>General Amnesty for Undergraduate Students yet to
+                        Graduate</b></p>
                 {/* <button style="background-color: #3d8b5f;"><b>Admission Status Checker</b></button> */}
-                <button className="bg-teal-500 text-white"><b>Admission Status Checker</b></button>
+                <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>Admission Status Checker</b></p>
                 {/* <button style="background-color: #f76149;"><b>Join the UG Alumni Network</b></button> */}
-                <button className="bg-orange-400 text-white"><b>Join the UG Alumni Network</b></button>
+                <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Join the UG Alumni Network</b></p>
                 {/* <button style="background-color: #7D7B7B;"><b>Donate to VC's Student Digitalisation */}
                         {/* Initiative</b></button> */}
-                <button className="bg-gray-400 text-white"><b>Donate to VC's Student Digitalisation
-                        Initiative</b></button>
+                <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>Donate to VC's Student Digitalisation
+                        Initiative</b></p>
                 {/* <button style="background-color: #00bdee;"><b>Coronavirus Risk Assessment Form</b></button> */}
-                <button className="bg-blue-400 text-white"><b>Coronavirus Risk Assessment Form</b></button>
+                <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>Coronavirus Risk Assessment Form</b></p>
                 {/* <button style="background-color: #DF8B0C;"><b>Sakai LMS Login</b></button> */}
-                <button className="bg-yellow-500 text-white"><b>Sakai LMS Login</b></button>
+                <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>Sakai LMS Login</b></p>
                 {/* <button style="background-color: #3d8b5f;"><b>Vacancy Announcements</b></button> */}
-                <button><b>Vacancy Announcements</b></button>
+                <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>Vacancy Announcements</b></p>
                 {/* <button style="background-color: #f76149;"><b>Steps for Online Registration</b></button> */}
-                <button><b>Steps for Online Registration</b></button>
+                <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Steps for Online Registration</b></p>
                 {/* <button style="background-color: #7D7B7B;"><b>SCHEDULE OF FEES</b></button> */}
-                <button><b>SCHEDULE OF FEES</b></button>
+                <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>SCHEDULE OF FEES</b></p>
                 {/* <button style="background-color: #00bdee;"><b>Academic Calendar</b></button> */}
-                <button><b>Academic Calendar</b></button>
+                <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>Academic Calendar</b></p>
                 {/* <button style="background-color: #DF8B0C;"><b>University Regulations for Junior Members</b></button> */}
-                <button><b>University Regulations for Junior Members</b></button>
+                <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>University Regulations for Junior Members</b></p>
             </div>
         </div>
 
         {/* <!-- bottom navigation bar styling --> */}
-        <div class="bottomNavBar">
+        <div className="grid grid-cols-6 bg-gray-200 p-2 text-blue-400">
             {/* <a style="color: #428BCA;" href="Link">MIS Web</a> */}
             <a href="Link">MIS Web</a>
             {/* <a style="color: #428BCA;" href="Link">Staff email</a> */}
@@ -172,46 +172,46 @@ function Page2() {
         </div>
 
         {/* <!-- colleges, admissions, quick links section styling --> */}
-        <div class="CollegesAdmiss">
+        <div className="grid grid-cols-5 bg-blue-950 p-2">
             <div>
-                <h3 class="CollegesAdmissHeadings">GET IN TOUCH WITH US</h3>
-                <p class="CollegesAdmissPara">+233-(0)302-213820</p>
-                <p class="CollegesAdmissPara">+233-(0)302-213820</p>
-                <p class="CollegesAdmissPara">pad@ug.edu.gh</p>
-                <p class="CollegesAdmissPara">P.O. Box LG 25</p>
-                <p class="CollegesAdmissPara">Legon, Accra</p>
+                <h3 className="text-base text-yellow-500 font-semibold m-2">GET IN TOUCH WITH US</h3>
+                <p className="text-white text-sm m-2">+233-(0)302-213820</p>
+                <p className="text-white text-sm m-2">+233-(0)302-213820</p>
+                <p className="text-white text-sm m-2">pad@ug.edu.gh</p>
+                <p className="text-white text-sm m-2">P.O. Box LG 25</p>
+                <p className="text-white text-sm m-2">Legon, Accra</p>
             </div>
             <div>
-                <h3 class="CollegesAdmissHeadings">COLLEGES</h3>
-                <p class="CollegesAdmissPara">Basic & Applied Sciences</p>
-                <p class="CollegesAdmissPara">Education</p>
-                <p class="CollegesAdmissPara">Health Science</p>
-                <p class="CollegesAdmissPara">Humanities</p>
-                <p class="CollegesAdmissPara">School of Graduate Studies</p>
+                <h3 className="text-base text-yellow-500 font-semibold m-2">COLLEGES</h3>
+                <p className="text-white text-sm m-2">Basic & Applied Sciences</p>
+                <p className="text-white text-sm m-2">Education</p>
+                <p className="text-white text-sm m-2">Health Science</p>
+                <p className="text-white text-sm m-2">Humanities</p>
+                <p className="text-white text-sm m-2">School of Graduate Studies</p>
             </div>
             <div>
-                <h3 class="CollegesAdmissHeadings">ADMISSIONS</h3>
-                <p class="CollegesAdmissPara">Undergraduate</p>
-                <p class="CollegesAdmissPara">Postgraduate</p>
-                <p class="CollegesAdmissPara">International</p>
-                <p class="CollegesAdmissPara">Distance Education</p>
+                <h3 className="text-base text-yellow-500 font-semibold m-2">ADMISSIONS</h3>
+                <p className="text-white text-sm m-2">Undergraduate</p>
+                <p className="text-white text-sm m-2">Postgraduate</p>
+                <p className="text-white text-sm m-2">International</p>
+                <p className="text-white text-sm m-2">Distance Education</p>
             </div>
             <div>
-                <h3 class="CollegesAdmissHeadings">QUICK LINKS</h3>
-                <p class="CollegesAdmissPara">Academic</p>
-                <p class="CollegesAdmissPara">Record Verification</p>
-                <p class="CollegesAdmissPara">UG Journals</p>
-                <p class="CollegesAdmissPara">Times Higher Education</p>
-                <p class="CollegesAdmissPara">UG Intranet Portal</p>
-                <p class="CollegesAdmissPara">The Pan-African Doctoral Academy (PADA)</p>
-                <p class="CollegesAdmissPara">Employment Opportunities</p>
+                <h3 className="text-base text-yellow-500 font-semibold m-2">QUICK LINKS</h3>
+                <p className="text-white text-sm m-2">Academic</p>
+                <p className="text-white text-sm m-2">Record Verification</p>
+                <p className="text-white text-sm m-2">UG Journals</p>
+                <p className="text-white text-sm m-2">Times Higher Education</p>
+                <p className="text-white text-sm m-2">UG Intranet Portal</p>
+                <p className="text-white text-sm m-2">The Pan-African Doctoral Academy (PADA)</p>
+                <p className="text-white text-sm m-2">Employment Opportunities</p>
             </div>
             <div>
-                <h3 class="CollegesAdmissHeadings">ALUMNI</h3>
-                <p class="CollegesAdmissPara">UG Alumni Relations Office</p>
-                <p class="CollegesAdmissPara">UG Alumni Association (Ghana)</p>
-                <p class="CollegesAdmissPara">UG Alumni Association (North America)</p>
-                <p class="CollegesAdmissPara">Give to UG</p>
+                <h3 className="text-base text-yellow-500 font-semibold m-2">ALUMNI</h3>
+                <p className="text-white text-sm m-2">UG Alumni Relations Office</p>
+                <p className="text-white text-sm m-2">UG Alumni Association (Ghana)</p>
+                <p className="text-white text-sm m-2">UG Alumni Association (North America)</p>
+                <p className="text-white text-sm m-2">Give to UG</p>
             </div>
         </div>
 
