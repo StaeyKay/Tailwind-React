@@ -10,7 +10,7 @@ function Page2() {
         // <!-- mainContainer styling -->
     <div>
         {/* <!-- topnav styling --> */}
-        <div className="grid grid-cols-3 text-center bg-blue-950 md:bg-orange-600 sm:bg-purple-950 text-white p-3">
+        <div className="grid grid-cols-3 text-center bg-blue-950 md:bg-orange-600 sm:bg-yellow-600 text-white p-3">
             {/* <a href="Link" style="text-align: right; padding-right: 20px;">Staff</a> */}
             <a href="Link">Staff</a>
             <a href="Link">Student</a>
@@ -46,7 +46,7 @@ function Page2() {
 
         {/* <!-- newsRow styling --> */}
         {/* <div style="display: grid; grid-template-columns: 18.75% 18.75% 18.75% 18.75% 25%;"></div> */}
-        <div className="grid grid-cols-5">
+        <div className="grid grid-cols-5 sm:grid-cols-1 md:grid-cols-3">
             <figure className="ms-1 me-2">
                 <img src= {img1} alt="Image1"/>
                 <figcaption className="text-blue-400">University of Ghana to host Turkish Cultural Institute</figcaption>
