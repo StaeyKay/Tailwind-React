@@ -1,24 +1,26 @@
-import Chanelimagefood from "../assets/images/food.png";
+import food from "../assets/images/food.png";
 
 function Page3() {
     return (
         <div className="bg-green-200" >
-            <div className="bg-white m-10 p-3 rounded-2xl grid grid-cols-2">
+            <div className="bg-white m-10 p-3 px-7 rounded-2xl grid grid-cols-2">
                 <div>
-                    <p class>Organo</p>
-                    <p>100% Organic food</p>
-                    <p>Healthy Lifestyle</p>
-                    <p>is your only unfair</p>
-                    <p>advantage</p><br />
+                    <p className="font-bold text-xl">Organ<span className="text-green-400">o</span></p><br /><br />
+                    <p className="text-green-400 text-sm font-bold">100% Organic food</p><br />
+                    <p className="text-5xl font-bold">Healthy Lifestyle</p>
+                    <p className="text-5xl font-bold">is your only <span className="text-green-400">unfair</span></p>
+                    <p className="text-green-400 text-5xl font-bold">advantage</p><br />
                     <p>Choose healthy habits with Organo daily meal</p>
                     <p>prepared by our expert nutritionist and chef</p><br />
-                    <button>Get started</button>
-                    <button>Explore menu</button>
+                    <div className="grid grid-cols-4">
+                        <div className="bg-green-400 rounded-md">
+                            <button className="text-white font-semibold text-center p-2">Get started</button>
+                        </div>
+                        <div>
+                            <button>Explore menu</button>
+                        </div>
+                    </div>
 
-                    <button>Get Started</button>
-                    {/* <div class="col-span-4">
-                        <p>Home Delivery Pricing FAQs Contact <button>Get Started</button></p>
-                    </div> */}
                 </div>
 
                 <div className="grid grid-cols-6 p-2">
@@ -28,6 +30,9 @@ function Page3() {
                     <p class="col-span-1">FAQs</p>
                     <p class="col-span-1">Contact</p>
                     <p class="col-span-1">Get Started</p>
+                    <img src={food} alt="foodImg" className="object-cover w-full col-span-6 py-8" />
+                    <p className="text-right col-span-6">Powered by Fueler</p>
+
                 </div>
             </div>
         </div>
