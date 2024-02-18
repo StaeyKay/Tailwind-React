@@ -14,7 +14,7 @@ function Page3() {
                     <p>prepared by our expert nutritionist and chef</p><br />
                     <div className="grid grid-cols-4">
                         <div>
-                            <button className="text-white font-semibold text-center p-2 border bg-green-400 rounded-md shadow-xl shadow-green-200">Get started</button>
+                            <button className="text-white font-semibold text-center p-2 bg-green-400 rounded-md shadow-xl shadow-green-200">Get started</button>
                         </div>
                         <div>
                             <button className="border border-black p-2 border-solid font-semibold rounded-md">Explore menu</button>
