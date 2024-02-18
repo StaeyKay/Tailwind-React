@@ -14,11 +14,16 @@ function Page3() {
                     <p>prepared by our expert nutritionist and chef</p><br />
                     <div className="grid grid-cols-4">
                         <div>
-                            <button className="text-white font-semibold text-center p-2 bg-green-400 rounded-md">Get started</button>
+                            <button className="text-white font-semibold text-center p-2 border bg-green-400 rounded-md shadow-xl shadow-green-200">Get started</button>
                         </div>
                         <div>
-                            <button className="border-black p-2 border-solid font-semibold">Explore menu</button>
+                            <button className="border border-black p-2 border-solid font-semibold rounded-md">Explore menu</button>
                         </div>
+                    </div><br/><br/>
+                    <div>
+                        <h5 className="text-xl font-semibold">Chef of the month</h5>
+                        <p>People love his</p>
+                        <p className="text-green-400 font-semibold">80+ famous dishes</p>
                     </div>
 
                 </div>
@@ -29,7 +34,7 @@ function Page3() {
                     <p class="col-span-1 font-bold">Pricing</p>
                     <p class="col-span-1 font-bold">FAQs</p>
                     <p class="col-span-1 font-bold">Contact</p>
-                    <button class="col-span-1 bg-green-400 text-white rounded-md text-center font-bold p-1">Get Started</button>
+                    <button class="col-span-1 bg-green-400 text-white rounded-md text-center font-bold p-1 shadow-green-200">Get Started</button>
                     <img src={food} alt="foodImg" className="object-cover w-full col-span-6 py-8" />
                     <p className="text-right col-span-6">Powered by Fueler</p>
 
