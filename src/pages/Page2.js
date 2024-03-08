@@ -4,6 +4,11 @@ import img3 from "../assets/images/img3.jpg";
 import img4 from "../assets/images/img4.jpg";
 import newfile_ug from "../assets/images/newfile_ug.png";
 import undergrad from "../assets/images/undergrad admissions.png";
+import NavMenu from "../pages/Page4.js"
+import {NewsRow} from "../pages/Page4.js"
+import {UpEvents} from "../pages/Page4.js"
+import BottNav from "../pages/Page5.js"
+import {ColAdmin} from "../pages/Page5.js"
 
 function Page2() {
     return (
@@ -26,15 +31,16 @@ function Page2() {
         </div>
 
         {/* <!-- navmenu styling --> */}
-        <div className="grid grid-cols-7 bg-blue-950 text-white">
+        {/* <div className="grid grid-cols-7 bg-blue-950 text-white">
             <a href="Link" className="text-center p-2">ABOUT</a>
-            <a href="Link" className="text-center p-2 sm:text-green-600">ADMISSION</a>
+            <a href="Link" className="text-center p-2">ADMISSION</a>
             <a href="Link" className="text-center p-2">ACADEMICS</a>
             <a href="Link" className="text-center p-2">RESEARCH</a>
             <a href="Link" className="text-center p-2">LIBRARY</a>
             <a href="Link" className="text-center p-2">INTERNATIONAL PROGRAMMES</a>
             <a href="Link" className="text-center p-2">FRESHMEN INFO</a>
-        </div>
+        </div> */}
+        <NavMenu/>
 
         {/* <!-- topimage styling --> */}
         <div>
@@ -46,7 +52,7 @@ function Page2() {
 
         {/* <!-- newsRow styling --> */}
         {/* <div style="display: grid; grid-template-columns: 18.75% 18.75% 18.75% 18.75% 25%;"></div> */}
-        <div className="grid lg:grid-cols-5 sm:grid-cols-1 md:grid-cols-3">
+        {/* <div className="grid lg:grid-cols-5 sm:grid-cols-1 md:grid-cols-3">
             <figure className="ms-1 me-2">
                 <img src= {img1} alt="Image1"/>
                 <figcaption className="text-blue-400">University of Ghana to host Turkish Cultural Institute</figcaption>
@@ -71,15 +77,16 @@ function Page2() {
                 <img src= {newfile_ug} alt="Image5"/>
             </figure>
 
-        </div>
+        </div> */}
+        <NewsRow/>
 
         {/* <!-- upcoming events, announcements and featured links row styling --> */}
-        <div className="grid grid-cols-3 m-2">
+        {/* <div className="grid grid-cols-3 m-2"> */}
 
             {/* <!-- upcoming events section --> */}
-            <div>
+            {/* <div> */}
             {/* <h3 class="row4Headings" style="margin-left: 0px;">Upcoming Events</h3> */}
-                <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0">Upcoming Events</h3>
+                {/* <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0">Upcoming Events</h3>
                 <p className="text-blue-400 px-3">Launch of the Internship Policy of the University of Ghana, Legon</p>
                 <p className="text-blue-400 px-3">Time: 10:00 am to 12:00 pm</p>
                 <p className="text-blue-400 px-3">Great Hall, University of Ghana</p>
@@ -88,11 +95,11 @@ function Page2() {
                 <p className="text-blue-400 px-3">University of Ghana</p>
                 <p className="text-blue-400 px-3">2023 OPEN DAY</p>
                 <p className="text-blue-400 px-3">Time: 9:00 pm to 3:00 pm</p>
-                <p className="text-blue-400 px-3">UG Sports Complex / Korle-Bu</p>
-            </div>
+                <p className="text-blue-400 px-3">UG Sports Complex / Korle-Bu</p> */}
+            {/* </div> */}
 
             {/* <!-- announcements section --> */}
-            <div>
+            {/* <div>
                 <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0">Announcements</h3>
                 <p className="text-blue-400 px-3">Call for Abstracts - Research Week - University of Ghana Dental School</p>
                 <hr/>
@@ -111,68 +118,71 @@ function Page2() {
                 <p className="text-blue-400 px-3">Logical Framework Approach and Result Framework Training</p>
                 <hr/>
                 <p className="text-blue-400 px-3">more announcements....</p>
-            </div>
+            </div> */}
 
             {/* <!-- Featured links section --> */}
-            <div>
+            {/* <div> */}
             {/* <h3 class="row4Headings" style="width: 100%;">Featured Links</h3> */}
-                <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0 mb-2">Featured Links</h3>
+                {/* <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0 mb-2">Featured Links</h3> */}
                 {/* <button style="background-color: #3d8b5f;"><b>August 2023 Congregation</b></button> */}
-                <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>August 2023 Congregation</b></p>
+                {/* <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>August 2023 Congregation</b></p> */}
                 {/* <button style="background-color: #f76149;"><b>Course Lecturer Evaluation</b></button> */}
-                <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Course Lecturer Evaluation</b></p>
+                {/* <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Course Lecturer Evaluation</b></p> */}
                 {/* <button style="background-color: #7D7B7B;"><b>Mature Student Admissions (Second Batch)</b></button> */}
-                <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>Mature Student Admissions (Second Batch)</b></p>
+                {/* <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>Mature Student Admissions (Second Batch)</b></p> */}
                 {/* <button style="background-color: #00bdee;"><b>2ND Semester Examination Timetable</b></button> */}
-                <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>2ND Semester Examination Timetable</b></p>
+                {/* <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>2ND Semester Examination Timetable</b></p> */}
                 {/* <button style="background-color: #DF8B0C;"><b>General Amnesty for Undergraduate Students yet to */}
                         {/* Graduate</b></button> */}
-                <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>General Amnesty for Undergraduate Students yet to
-                        Graduate</b></p>
+                {/* <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>General Amnesty for Undergraduate Students yet to
+                        Graduate</b></p> */}
                 {/* <button style="background-color: #3d8b5f;"><b>Admission Status Checker</b></button> */}
-                <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>Admission Status Checker</b></p>
+                {/* <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>Admission Status Checker</b></p> */}
                 {/* <button style="background-color: #f76149;"><b>Join the UG Alumni Network</b></button> */}
-                <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Join the UG Alumni Network</b></p>
+                {/* <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Join the UG Alumni Network</b></p> */}
                 {/* <button style="background-color: #7D7B7B;"><b>Donate to VC's Student Digitalisation */}
                         {/* Initiative</b></button> */}
-                <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>Donate to VC's Student Digitalisation
-                        Initiative</b></p>
+                {/* <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>Donate to VC's Student Digitalisation
+                        Initiative</b></p> */}
                 {/* <button style="background-color: #00bdee;"><b>Coronavirus Risk Assessment Form</b></button> */}
-                <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>Coronavirus Risk Assessment Form</b></p>
+                {/* <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>Coronavirus Risk Assessment Form</b></p> */}
                 {/* <button style="background-color: #DF8B0C;"><b>Sakai LMS Login</b></button> */}
-                <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>Sakai LMS Login</b></p>
+                {/* <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>Sakai LMS Login</b></p> */}
                 {/* <button style="background-color: #3d8b5f;"><b>Vacancy Announcements</b></button> */}
-                <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>Vacancy Announcements</b></p>
+                {/* <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>Vacancy Announcements</b></p> */}
                 {/* <button style="background-color: #f76149;"><b>Steps for Online Registration</b></button> */}
-                <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Steps for Online Registration</b></p>
+                {/* <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Steps for Online Registration</b></p> */}
                 {/* <button style="background-color: #7D7B7B;"><b>SCHEDULE OF FEES</b></button> */}
-                <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>SCHEDULE OF FEES</b></p>
+                {/* <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>SCHEDULE OF FEES</b></p> */}
                 {/* <button style="background-color: #00bdee;"><b>Academic Calendar</b></button> */}
-                <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>Academic Calendar</b></p>
+                {/* <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>Academic Calendar</b></p> */}
                 {/* <button style="background-color: #DF8B0C;"><b>University Regulations for Junior Members</b></button> */}
-                <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>University Regulations for Junior Members</b></p>
+                {/* <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>University Regulations for Junior Members</b></p>
             </div>
-        </div>
+        </div> */}
+        <UpEvents/>
 
         {/* <!-- bottom navigation bar styling --> */}
-        <div className="grid grid-cols-6 bg-gray-200 p-2 text-blue-400">
+        {/* <div className="grid grid-cols-6 bg-gray-200 p-2 text-blue-400"> */}
             {/* <a style="color: #428BCA;" href="Link">MIS Web</a> */}
-            <a href="Link">MIS Web</a>
+            {/* <a href="Link">MIS Web</a> */}
             {/* <a style="color: #428BCA;" href="Link">Staff email</a> */}
-            <a href="Link">Staff email</a>
+            {/* <a href="Link">Staff email</a> */}
             {/* <a style="color: #428BCA;" href="Link">Student email</a> */}
-            <a href="Link">Student email</a>
+            {/* <a href="Link">Student email</a> */}
             {/* <a style="color: #428BCA;" href="Link">Sakai LMS</a> */}
-            <a href="Link">Sakai LMS</a>
+            {/* <a href="Link">Sakai LMS</a> */}
             {/* <a style="color: #428BCA;" href="Link">Careers & Counselling</a> */}
-            <a href="Link">Careers & Counselling</a>
+            {/* <a href="Link">Careers & Counselling</a> */}
             {/* <a style="color: #428BCA;" href="Link">Radio Univers</a> */}
-            <a href="Link">Radio Univers</a>
+            {/* <a href="Link">Radio Univers</a> */}
 
-        </div>
+        {/* </div> */}
+
+        <BottNav/>
 
         {/* <!-- colleges, admissions, quick links section styling --> */}
-        <div className="grid grid-cols-5 bg-blue-950 p-2">
+        {/* <div className="grid grid-cols-5 bg-blue-950 p-2">
             <div>
                 <h3 className="text-base text-yellow-500 font-semibold m-2">GET IN TOUCH WITH US</h3>
                 <p className="text-white text-sm m-2">+233-(0)302-213820</p>
@@ -213,7 +223,8 @@ function Page2() {
                 <p className="text-white text-sm m-2">UG Alumni Association (North America)</p>
                 <p className="text-white text-sm m-2">Give to UG</p>
             </div>
-        </div>
+        </div> */}
+         <ColAdmin/>
 
         {/* <!-- final footer styling --> */}
         <div className="bg-gray-900 text-white text-center m-0 p-1">
