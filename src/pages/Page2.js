@@ -4,6 +4,7 @@ import img3 from "../assets/images/img3.jpg";
 import img4 from "../assets/images/img4.jpg";
 import newfile_ug from "../assets/images/newfile_ug.png";
 import undergrad from "../assets/images/undergrad admissions.png";
+import {UGFeaturedLinks} from "../components/UGFeaturedlinks.js"
 
 function Page2() {
     return (
@@ -118,39 +119,21 @@ function Page2() {
             {/* <h3 class="row4Headings" style="width: 100%;">Featured Links</h3> */}
                 <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0 mb-2">Featured Links</h3>
                 {/* <button style="background-color: #3d8b5f;"><b>August 2023 Congregation</b></button> */}
-                <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>August 2023 Congregation</b></p>
-                {/* <button style="background-color: #f76149;"><b>Course Lecturer Evaluation</b></button> */}
-                <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Course Lecturer Evaluation</b></p>
-                {/* <button style="background-color: #7D7B7B;"><b>Mature Student Admissions (Second Batch)</b></button> */}
-                <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>Mature Student Admissions (Second Batch)</b></p>
-                {/* <button style="background-color: #00bdee;"><b>2ND Semester Examination Timetable</b></button> */}
-                <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>2ND Semester Examination Timetable</b></p>
-                {/* <button style="background-color: #DF8B0C;"><b>General Amnesty for Undergraduate Students yet to */}
-                        {/* Graduate</b></button> */}
-                <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>General Amnesty for Undergraduate Students yet to
-                        Graduate</b></p>
-                {/* <button style="background-color: #3d8b5f;"><b>Admission Status Checker</b></button> */}
-                <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>Admission Status Checker</b></p>
-                {/* <button style="background-color: #f76149;"><b>Join the UG Alumni Network</b></button> */}
-                <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Join the UG Alumni Network</b></p>
-                {/* <button style="background-color: #7D7B7B;"><b>Donate to VC's Student Digitalisation */}
-                        {/* Initiative</b></button> */}
-                <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>Donate to VC's Student Digitalisation
-                        Initiative</b></p>
-                {/* <button style="background-color: #00bdee;"><b>Coronavirus Risk Assessment Form</b></button> */}
-                <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>Coronavirus Risk Assessment Form</b></p>
-                {/* <button style="background-color: #DF8B0C;"><b>Sakai LMS Login</b></button> */}
-                <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>Sakai LMS Login</b></p>
-                {/* <button style="background-color: #3d8b5f;"><b>Vacancy Announcements</b></button> */}
-                <p className="bg-teal-500 text-white mb-2 p-2 text-center"><b>Vacancy Announcements</b></p>
-                {/* <button style="background-color: #f76149;"><b>Steps for Online Registration</b></button> */}
-                <p className="bg-orange-400 text-white mb-2 p-2 text-center"><b>Steps for Online Registration</b></p>
-                {/* <button style="background-color: #7D7B7B;"><b>SCHEDULE OF FEES</b></button> */}
-                <p className="bg-gray-400 text-white mb-2 p-2 text-center"><b>SCHEDULE OF FEES</b></p>
-                {/* <button style="background-color: #00bdee;"><b>Academic Calendar</b></button> */}
-                <p className="bg-blue-400 text-white mb-2 p-2 text-center"><b>Academic Calendar</b></p>
-                {/* <button style="background-color: #DF8B0C;"><b>University Regulations for Junior Members</b></button> */}
-                <p className="bg-yellow-500 text-white mb-2 p-2 text-center"><b>University Regulations for Junior Members</b></p>
+                <UGFeaturedLinks name="August 2023 Congregation"/>
+                <UGFeaturedLinks name="Course Lecturer Evaluation"/>
+                <UGFeaturedLinks name="Mature Student Admissions (Second Batch)"/>
+                <UGFeaturedLinks name="2ND Semester Examination Timetable"/>
+                <UGFeaturedLinks name="General Amnesty for Undergraduate Students yet to Graduate"/>
+                <UGFeaturedLinks name="Admission Status Checker"/>
+                <UGFeaturedLinks name="Join the UG Alumni Network"/>
+                <UGFeaturedLinks name="Donate to VC's Student Digitalisation Initiative"/>
+                <UGFeaturedLinks name="Coronavirus Risk Assessment Form"/>
+                <UGFeaturedLinks name="Sakai LMS Login"/>
+                <UGFeaturedLinks name="Vacancy Announcements"/>
+                <UGFeaturedLinks name="Steps for Online Registration"/>
+                <UGFeaturedLinks name="SCHEDULE OF FEES"/>
+                <UGFeaturedLinks name="Academic Calendar"/>
+                <UGFeaturedLinks name="University Regulations for Junior Members"/>
             </div>
         </div>
 
