@@ -117,10 +117,11 @@ function Page2() {
             {/* <!-- Featured links section --> */}
             <div>
             {/* <h3 class="row4Headings" style="width: 100%;">Featured Links</h3> */}
-                <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0 mb-2">Featured Links</h3>
+                {/* <h3 className="text-xl font-semibold text-white bg-blue-950 p-3 m-2 ml-0 mb-2">Featured Links</h3> */}
+                <h3 style={{backgroundColor:"#172554", color:"white"}}>Featured Links</h3>
                 {/* <button style="background-color: #3d8b5f;"><b>August 2023 Congregation</b></button> */}
-                <UGFeaturedLinks name="August 2023 Congregation"/>
-                <UGFeaturedLinks name="Course Lecturer Evaluation"/>
+                <UGFeaturedLinks name="August 2023 Congregation" estherColor="bg-teal-500"/>
+                <UGFeaturedLinks name="Course Lecturer Evaluation" estherColor="bg-red-500"/>
                 <UGFeaturedLinks name="Mature Student Admissions (Second Batch)"/>
                 <UGFeaturedLinks name="2ND Semester Examination Timetable"/>
                 <UGFeaturedLinks name="General Amnesty for Undergraduate Students yet to Graduate"/>
