@@ -1,6 +1,9 @@
 import Chanelimage from "../assets/images/Chanelimage.jpg";
+import {useState} from "react";
 
-function Page1() {
+function Page1() { 
+    // first declare the state
+    const [name, setName]=useState("Jude")
     return (
 
         <div className="grid grid-cols-2">
@@ -14,7 +17,9 @@ function Page1() {
             <div className="p-5 bg-white rounded-md">
                 {/* <h6 style="letter-spacing: 7px;">PERFUME</h6> */}
 
-                <h6 className="tracking-widest">PERFUME</h6><br />
+                {/* insert the declared state into the code */}
+                <h6 className="tracking-widest">PERFUME {name}</h6><br />
+                <h6 className="tracking-widest">Hi, my name is {name}</h6><br />
                 <h2 className="font-extrabold text-3xl">Gabrielle Essence Eau De Parfum</h2><br />
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Corrupti, perspiciatis. Cumque temporibus fuga incidunt
@@ -32,6 +37,14 @@ function Page1() {
                 </div><br /><br /><br />
 
                 <button type="button" className="w-full p-4 text-base bg-green-600 text-white rounded-xl">Add to Cart</button>
+                <button onClick={() => {
+                    console.log("I have clicked button one");
+                    setName("Esther")
+                }} type="button" className="w-full p-4 text-base bg-green-600 text-white rounded-xl">Change name to Esther</button>
+                <button onClick={() => {
+                    console.log("I have clicked button two");
+                    setName("Hayford")
+                }} type="button" className="w-full p-4 text-base bg-green-600 text-white rounded-xl">Change name to Hayford</button>
             </div>
         </div>
     );
