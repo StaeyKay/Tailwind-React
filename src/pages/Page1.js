@@ -1,9 +1,15 @@
 import Chanelimage from "../assets/images/Chanelimage.jpg";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 function Page1() { 
     // first declare the state
     const [name, setName]=useState("Jude")
+    useEffect(() => {
+        console.log("I am running after HTML render");
+    }, [])
+    useEffect(() => {
+        console.log("I am run anytime state name is updated.");
+    }, [name])
     return (
 
         <div className="grid grid-cols-2">
