@@ -24,7 +24,7 @@ function Page1() {
                 {/* <h6 style="letter-spacing: 7px;">PERFUME</h6> */}
 
                 {/* insert the declared state into the code */}
-                <h6 className="tracking-widest">PERFUME {name}</h6><br />
+                <h1 className="tracking-widest">PERFUME {name}</h1><br />
                 <h6 className="tracking-widest">Hi, my name is {name}</h6><br />
                 <h2 className="font-extrabold text-3xl">Gabrielle Essence Eau De Parfum</h2><br />
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
