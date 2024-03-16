@@ -1,17 +1,24 @@
 import { useState } from "react";
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 function Page5() {
     const [productName, setProductName] = useState()
     const [costPrice, setCostPrice] = useState()
     const [sellingPrice, setSellingPrice] = useState()
+
+    const [profitArray , setProfitArray]= useState([])
+
+    const arrayTest = ["esthe22r", "hayford", "jude", "mom"];
     return (
         <div className="bg-pink-500" >
             <h1>Akusika Beverages Stock Tracker</h1><br />
             <form>
                 <label for="products">Select a product: </label>
-                <select onChange={(e) => {
-                    setProductName(e.target.value)
-                }} name="Products">
+
+                <select
+                    onChange={(e) => {
+                        setProductName(e.target.value)
+                    }} name="Products">
                     <option>Bigoo cocktail</option>
                     <option>Bigoo lemon</option>
                     <option>Bigoo cola</option>
@@ -35,7 +42,8 @@ function Page5() {
                     <option>Malta guinness (can)</option>
                     <option>Malta guinness (plastic)</option>
                     <option>Sachet water</option>
-                </select><br /><br />
+                </select>
+                <br /><br />
                 <label for="cost price">Input the cost price: </label>
                 <input
                     type="number"
@@ -46,10 +54,11 @@ function Page5() {
                 />
                 <br /><br />
                 <label for="selling price">Input the selling price: </label>
+
                 <input
                     type="number"
                     name="sellingPrice"
-                    onChange={(e)=>{
+                    onChange={(e) => {
                         setSellingPrice(e.target.value)
                     }} />
                 <br /><br />
@@ -58,9 +67,36 @@ function Page5() {
                 <p>{productName}</p>
                 <p>{costPrice}</p>
                 <p>{sellingPrice}</p>
-                <button type="submit" />
+
+                <Button
+                    className="bg-red-500"
+                    onClick={() => {
+                        const copiedProfitAray = [ ...profitArray];
+                        copiedProfitAray.push(
+                            {
+                                "productName":productName
+                            }
+                        )
+
+                    }}>Button</Button>
 
             </form>
+
+            <div>
+                <h1>table</h1>
+
+                    {/* {arrayTest.map((value) => {
+
+
+                        return (<div className="border-2 border-red-500">
+                            {value} is a name
+                        </div>)
+                    })
+                    } */}
+
+
+
+            </div>
         </div>
     );
 }
