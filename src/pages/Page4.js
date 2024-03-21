@@ -1,21 +1,21 @@
 import React from "react";
 import { useState } from "react";
-import { Button, ButtonGroup } from '@chakra-ui/react'
-import { Select } from '@chakra-ui/react'
 
 function Page4() {
-    const [data, setData] = useState(0)
-    const updateData = () => {
-        setData(data+1)
+    const [data, setData] = useState()
+    const getData = (e) => {
+        setData(e.target.value)
     }
     return (
-        <div className="bg-yellow-500" >
-            <h1>My name is {data}</h1>
-            <button 
-            className="w-max p-2 text-base bg-green-600 text-white rounded-lg"
-            onClick={updateData}
-            >Click Me!</button>
+
+        <div>
+            <h1 className="text-lg text-center">Get Input box value</h1>
+            <form>
+                <input type="text" onChange={getData} />
+                <p>{data}</p>
+            </form>
         </div>
+
     );
 }
 

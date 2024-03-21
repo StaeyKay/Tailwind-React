@@ -1,14 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import { Button } from '@chakra-ui/react'
-import { Select } from '@chakra-ui/react'
 
 function Page5() {
     const [productName, setProductName] = useState()
     const [costPrice, setCostPrice] = useState()
     const [sellingPrice, setSellingPrice] = useState()
 
-    const [profitArray , setProfitArray]= useState([])
+    const [profitArray, setProfitArray] = useState([])
 
     const arrayTest = ["esthe22r", "hayford", "jude", "mom"];
     return (
@@ -17,34 +15,34 @@ function Page5() {
             <form>
                 <label for="products">Select a product: </label>
 
-                <Select placeholder='Select option'
+                <select
                     onChange={(e) => {
                         setProductName(e.target.value)
-                    }} name="Products">
-                    <Option value='Bigoo cocktail'>Bigoo cocktail</Option>
-                    <Option value='Bigoo lemon'>Bigoo lemon</Option>
-                    <Option value='Bigoo cola'>Bigoo cola</Option>
-                    <Option value='Bigoo grape'>Bigoo grape</Option>
-                    <Option value='Bigoo orange'>Bigoo orange</Option>
-                    <Option value='Bigoo apple'>Bigoo apple</Option>
-                    <Option value='Bigoo energy'>Bigoo energy</Option>
-                    <Option value='Rush energy'>Rush energy</Option>
-                    <Option value='BB cocktail'>BB Coacktail</Option>
-                    <Option value='Vitamilk'>Vitamilk</Option>
-                    <Option value='U fresh soy milk'>U fresh soy milk</Option>
-                    <Option>U fresh pineaple</Option>
-                    <Option>Tampico (500 ml)</Option>
-                    <Option>Tampico (750 ml)</Option>
-                    <Option>Tampico (1 L)</Option>
-                    <Option>Bel cola</Option>
-                    <Option>Bel malt</Option>
-                    <Option>Bel active</Option>
-                    <Option>Bel aqua (500 ml)</Option>
-                    <Option>Bel aqua (750 ml)</Option>
-                    <Option>Malta guinness (can)</Option>
-                    <Option>Malta guinness (plastic)</Option>
-                    <Option>Sachet water</Option>
-                </Select>
+                    }} >
+                    <option>Bigoo cocktail</option>
+                    <option>Bigoo lemon</option>
+                    <option>Bigoo cola</option>
+                    <option>Bigoo grape</option>
+                    <option>Bigoo orange</option>
+                    <option>Bigoo apple</option>
+                    <option>Bigoo energy</option>
+                    <option>Rush energy</option>
+                    <option>BB Coacktail</option>
+                    <option>Vitamilk</option>
+                    <option>U fresh soy milk</option>
+                    <option>U fresh pineaple</option>
+                    <option>Tampico (500 ml)</option>
+                    <option>Tampico (750 ml)</option>
+                    <option>Tampico (1 L)</option>
+                    <option>Bel cola</option>
+                    <option>Bel malt</option>
+                    <option>Bel active</option>
+                    <option>Bel aqua (500 ml)</option>
+                    <option>Bel aqua (750 ml)</option>
+                    <option>Malta guinness (can)</option>
+                    <option>Malta guinness (plastic)</option>
+                    <option>Sachet water</option>
+                </select>
                 <br /><br />
                 <label for="cost price">Input the cost price: </label>
                 <input
@@ -70,24 +68,24 @@ function Page5() {
                 <p>{costPrice}</p>
                 <p>{sellingPrice}</p>
 
-                <Button
+                <button
                     className="bg-red-500"
                     onClick={() => {
-                        const copiedProfitAray = [ ...profitArray];
+                        const copiedProfitAray = [...profitArray];
                         copiedProfitAray.push(
                             {
-                                "productName":productName
+                                "productName": productName
                             }
                         )
 
-                    }}>Button</Button>
+                    }}>Button</button>
 
             </form>
 
             <div>
                 <h1>table</h1>
 
-                    {/* {arrayTest.map((value) => {
+                {/* {arrayTest.map((value) => {
 
 
                         return (<div className="border-2 border-red-500">
