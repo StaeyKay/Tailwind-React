@@ -2,18 +2,25 @@ import React from "react";
 import { useState } from "react";
 
 function Page4() {
-    const [data, setData] = useState()
-    const getData = (e) => {
-        setData(e.target.value)
+    const styles = {
+        innerDiv : {
+            backgroundColor: "#73AD21",
+            padding: "70px 0",
+            textAlign: "center",
+            border: "3px solid black",
+            width: "60%",
+            margin: "auto"
+        },
+        outerDiv: {
+            padding: "70px 0",
+            backgroundColor: "blue"
+        }
     }
+    
     return (
 
-        <div>
-            <h1 className="text-lg text-center">Get Input box value</h1>
-            <form>
-                <input type="text" onChange={getData} />
-                <p>{data}</p>
-            </form>
+        <div style={styles.outerDiv}>
+            <div style={styles.innerDiv}>This is a green box</div>
         </div>
 
     );

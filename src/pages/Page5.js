@@ -8,7 +8,7 @@ function Page5() {
 
     const [profitArray, setProfitArray] = useState([])
 
-    const arrayTest = ["esthe22r", "hayford", "jude", "mom"];
+    const arrayTest = ["esther", "hayford", "jude", "mom"];
     return (
         <div className="bg-pink-500" >
             <h1>Akusika Beverages Stock Tracker</h1><br />
@@ -71,8 +71,8 @@ function Page5() {
                 <button
                     className="bg-red-500"
                     onClick={() => {
-                        const copiedProfitAray = [...profitArray];
-                        copiedProfitAray.push(
+                        const copiedProfitArray = [...profitArray];
+                        copiedProfitArray.push(
                             {
                                 "productName": productName
                             }
