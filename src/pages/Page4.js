@@ -3,31 +3,26 @@ import { useState } from "react";
 
 function Page4() {
 
-    // initalize a state to receive input from the user
-    const [data, setData]=useState(null)
-    const [print, setPrint]=useState(false)
-
-    // define a function getData to update the current state of data
-    function getData(e) {
-        setPrint(false)
-        setData(e.target.value)
-    }
+    // define a state to show/hide the text
+    const [show, setShow]=useState(false)
 
     return (
 
         <div>
 
-            {/* ternary operator to define the conditions of print */}
+            {/* state the conditions for hiding/showing the text */}
             {
-                print?
-                <h1>{data}</h1>
-                :null
-             }
-            <input type="text" onChange={getData}/><br/>
-            <button style={{backgroundColor: "red", padding: "10px"}} onClick={()=>setPrint(true)}>Print value</button>
+            show?<h1>Hello World!</h1>:null
+            }
+            {/* <button style={{backgroundColor: "green", padding: "10px"}} onClick={()=>setShow(true)}>Show</button>
+            <button style={{backgroundColor: "red", padding: "10px"}} onClick={()=>setShow(false)}>Hide</button> */}
+            <button style={{backgroundColor: "red", padding: "10px"}} onClick={()=>setShow(!show)}>Toggle</button>
+
         </div>
 
     );
-}
+
+    }
+
 
 export default Page4;
