@@ -2,21 +2,28 @@ import React from "react";
 import { useState } from "react";
 
 function Page4() {
-    
+
+    // initalize a state to receive input from the user
+    const [data, setData]=useState(null)
+    const [print, setPrint]=useState(false)
+
+    function getData(e) {
+        setPrint(false)
+        setData(e.target.value)
+    }
+
     return (
 
-        <div style={{
-            padding: "70px 0",
-            backgroundColor: "orange"
-        }}>
-            <div style={{
-            backgroundColor: "#73AD21",
-            padding: "70px 0",
-            textAlign: "center",
-            border: "3px solid black",
-            width: "60%",
-            margin: "auto"
-        }}>This is a green box</div>
+        <div>
+
+            {/* ternary operator to define the conditions of print */}
+            {
+                print?
+                <h1>{data}</h1>
+                :null
+             }
+            <input type="text" onChange={getData}/><br/>
+            <button style={{backgroundColor: "red", padding: "10px"}} onClick={()=>setPrint(true)}>Print value</button>
         </div>
 
     );
