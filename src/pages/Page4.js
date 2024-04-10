@@ -7,6 +7,7 @@ function Page4() {
     const [data, setData]=useState(null)
     const [print, setPrint]=useState(false)
 
+    // define a function getData to update the current state of data
     function getData(e) {
         setPrint(false)
         setData(e.target.value)
