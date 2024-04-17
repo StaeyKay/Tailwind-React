@@ -2,6 +2,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { ChakraProvider } from '@chakra-ui/react'
 
 import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
@@ -43,6 +44,8 @@ const router = createBrowserRouter([
 
 function App() {
   return (
+    <ChakraProvider>
+
     <div>
       <ol className="flex justify-between py-3 border border-red-500">
         <li><a href="/" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Page 1</a></li>
@@ -58,6 +61,7 @@ function App() {
         <RouterProvider router={router} />
       </div>
     </div>
+    </ChakraProvider>
   );
 }
 
