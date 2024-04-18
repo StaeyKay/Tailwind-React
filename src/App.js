@@ -8,6 +8,7 @@ import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
 import Page4 from "./pages/Page4";
 import Page5 from "./pages/Page5";
+import Page6 from "./pages/Page6";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
     path: "/page5",
     element: <Page5 />,
   },
+  {
+    path: "/page6",
+    element: <Page6 />,
+  },
 ]);
 
 function App() {
@@ -45,6 +50,7 @@ function App() {
         <li><a href="/page3" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Page 3</a></li>
         <li><a href="/page4" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Page 4</a></li>
         <li><a href="/page5" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Page 5</a></li>
+        <li><a href="/page6" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Page 6</a></li>
 
       </ol>
 
